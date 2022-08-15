@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DrivenEats</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+  </head>
+  <body>
+    <div class="topo">
+      <h1>DrivenEats</h1>
+      <p>Sua comida em 6 minutos</p>
+    </div>
+    <div class="conteudo-principal">
+      <div class="prato-container">
+        <h2>Primeiro, seu prato</h2>
+        <div class="todos-os-pratos">
+          <!-- AQUI COMEÇA OS PRATOS-->
+
+          <div class="prato-box">
+            <div class="opcoes prato">
+              <div
+                class="Frango-Ying-Yang"
+                onclick="selecionarPrato('Frango-Ying-Yang')"
+              >
+                <img src="./images/pratofrango.png" />
+                <h3>Frango Yin Yang</h3>
+                <p>Um pouco de batata, um pouco de salada</p>
+                <h4 class="preco">R$ 14,90</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="prato-box">
+            <div class="opcoes prato">
+              <div class="Swharma" onclick="selecionarPrato('Swharma')">
+                <img src="./images/shwarma.webp" />
+                <h3>Shwarma misto</h3>
+                <p>Frango,carne e salada e legumes</p>
+                <h4 class="preco">R$ 12,90</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="prato-box">
+            <div class="opcoes prato">
+              <div class="Hamburguer" onclick="selecionarPrato('Hamburguer')">
+                <img src="./images/hamburguer.jpg" />
+                <h3>Hamburgão</h3>
+                <p>Pão, carne, queijo, salada e molho</p>
+                <h4 class="preco">R$ 15.90</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="prato-box">
+            <div class="opcoes prato">
+              <div class="Pizza" onclick="selecionarPrato('Pizza')">
+                <img src="./images/pizza_c.webp" />
+                <h3>Pizza italiana</h3>
+                <p>Calabresa e queij o derretido</p>
+                <h4 class="preco">R$ 19,90</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AQUI COMEÇA AS BEBIDAS-->
+
+      <div class="bebida-container">
+        <h2>Agora, sua bebida</h2>
+
+        <div class="todas-as-bebidas">
+          <div class="bebida-box">
+            <div class="opcoes bebida">
+              <div class="Coca" onclick="selecionarBebida('Coca')">
+                <img src="./images/download.jpg" />
+                <h3>Coquinha gelada</h3>
+                <p>Garrafa 1L</p>
+                <h4 class="preco">R$ 7,50</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="bebida-box">
+            <div class="opcoes bebida">
+              <div class="Suco" onclick="selecionarBebida('Suco')">
+                <img src="./images/sucodelaranja.jpg" />
+                <h3>Suco de Laranja</h3>
+                <p>Copo 500ml</p>
+                <h4 class="preco">R$ 6,90</h4>
+              </div>
+            </div>
+          </div>
+          <div class="bebida-box">
+            <div class="opcoes bebida">
+              <div class="Agua" onclick="selecionarBebida('Agua')">
+                <img src="./images/agua.jpg" />
+                <h3>Água mineral</h3>
+                <p>Garrafa 500ml</p>
+                <h4 class="preco">R$ 4,00</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="bebida-box">
+            <div class="opcoes bebida">
+              <div class="Brand" onclick="selecionarBebida('Brand')">
+                <img src="./images/brand-hero.jpg" />
+                <h3>Heineken</h3>
+                <p>Garrafa 500ml</p>
+                <h4 class="preco">R$ 7,50</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- AQUI COMEÇA AS SOBREMESAS-->
+
+      <div class="sobremesa-container">
+        <h2>Por fim, sua sobremesa</h2>
+
+        <div class="todas-as-sobremesas">
+          <div class="sobremesa-box">
+            <div class="opcoes sobremesa">
+              <div class="petit" onclick="selecionarSobremesa('petit')">
+                <img src="./images/petit-gateau.jpeg" />
+                <h3>Petit Gateau</h3>
+                <p>Chocolate e sorvete de creme delicioso</p>
+                <h4 class="preco">R$ 15,90</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="sobremesa-box">
+            <div class="opcoes sobremesa">
+              <div class="milkshake" onclick="selecionarSobremesa('milkshake')">
+                <img src="./images/49240_milkshake-oreo.webp" />
+                <h3>Milkshake Gourmet</h3>
+                <p>Sabores variados (500ml)</p>
+                <h4 class="preco">R$ 11,90</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="sobremesa-box">
+            <div class="opcoes sobremesa">
+              <div class="torta" onclick="selecionarSobremesa('torta')">
+                <img src="./images/torta-de-limao-1800x1351.jpg" />
+                <h3>Torta de Limão</h3>
+                <p>Macia, crocante e refinada</p>
+                <h4 class="preco">R$ 14,99</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="sobremesa-box">
+            <div class="opcoes sobremesa">
+              <div class="chocolate" onclick="selecionarSobremesa('chocolate')">
+                <img src="./images/chocolatequente.jpg" />
+                <h3>Chocolate quente</h3>
+                <p>Para dias frios e serenos</p>
+                <h4 class="preco">R$ 8,90</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="foot">
+        <p class="text-foot">Selecione os 3 itens para fechar o pedido</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
